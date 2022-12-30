@@ -1,0 +1,203 @@
+body{
+    animation-name: changecol;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.overflow{
+    overflow: hidden;
+    position:relative;
+   
+}
+
+
+#counter{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border: solid 5px black;
+    top: 80%;
+    left: 47%;
+    transform: translate(-20%, -53%);
+    margin: auto;
+    text-align: center;
+    color: black;
+    display: block;
+    
+}
+
+#updatescore{
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    top: 70%;
+    left: 40%;
+    transform: translate(-30%, -60%);
+    color: black;
+
+    
+}
+
+
+.game{
+    position: absolute;
+    width: 900px;
+    height: 300px;
+    border: solid 10px pink;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    background-image: url(./images/23e9bef6531f83d64cc391d895cd2b92.png);
+    
+    display: block;
+}
+
+@keyframes changecol{
+    0% {
+        background-color: white;
+    }
+    50%{
+        background-color: #F7717D;
+    }
+    100%{
+        background-color: white;
+    }
+}
+
+#fairy{
+    width: 70px;
+    height: 70px;
+    background-image: url(./images/purple-fairy-flying-t-w.gif);
+    background-size: 70px 70px;
+    position: relative;
+    top: 230px;
+}
+/*runningAnimation = loadAnimation(
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/littleGirl/run00.png', 
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/littleGirl/run01.png', 
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/littleGirl/run02.png', 
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/littleGirl/run03.png'
+);*/
+
+.jump{
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump{
+    0%{
+        top: 230px;
+    }
+    15%{
+        top: 200px;
+    }
+    30%{
+        top: 150px;
+    }
+    50%{
+        top: 100px;
+    }
+   70%{
+        top: 150px;
+    }
+    85%{
+        top: 200px;
+    }
+    
+    100%{
+        top: 230px;
+    }
+}
+
+#plant{
+    width: 50px;
+    height: 50px;
+    background-image: url(./images/clipart2374473.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 170px;
+    left: 850px;
+    animation: block 2s infinite linear;
+    transform: scaleX(-1);
+}
+
+@keyframes block{
+    0%{
+        left: 850px;
+    }
+    100%{
+        left: -40px;
+    }
+}
+
+
+.headstyle{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    
+    
+}
+
+.instructions{
+    text-align: center;
+    display: block;
+    position:relative;
+    margin:auto;
+    top: 0px;
+    bottom: 40px;
+    
+    
+}
+
+.glow {
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  #gem{
+    width: 50px;
+    height: 50px;
+    background-image: url(./images/gem5.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 120px;
+    left: 850px;
+    animation: block 3s infinite linear;
+    
+    
+  }
+
+  #Diamonds{
+    display: block;
+    float: left;
+    position: absolute;
+    left: 100px;
+}
+
+  #gemscore{
+    display: block;
+    float: left;
+    visibility: hidden;
+    background-image: url(./images/gem5.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    position: absolute;
+     left: 120px;
+    top: 200px;
+  }
+
